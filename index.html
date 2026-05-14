@@ -849,8 +849,7 @@ function submitForm(id){
   fetch('https://formspree.io/f/mnjwygll',{
     method:'POST',
     headers:{'Content-Type':'application/json','Accept':'application/json'},
-    body:JSON.stringify({...data,form_type:id,email:'info@ijustwealth.com.au'})
-  }).then(r=>{
+body:JSON.stringify(data)  }).then(r=>{
     el.style.display='block';
     el.scrollIntoView({behavior:'smooth',block:'center'});
   }).catch(()=>{
