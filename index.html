@@ -16,11 +16,11 @@
 html{scroll-behavior:smooth;}
 body{background:var(--black);color:var(--text);font-family:"Outfit",sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden;}
 h1,h2,h3,h4,h5{font-family:"Cormorant Garamond",serif;font-weight:500;line-height:1.15;}
- 
+
 /* ── PAGE SYSTEM ── */
 .page-view{display:none;}
 .page-view.active{display:block;}
- 
+
 /* ── NAV ── */
 nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content:space-between;align-items:center;padding:0 60px;height:72px;background:rgba(8,8,8,0.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(201,168,76,0.12);}
 .nav-logo img{height:36px;width:auto;cursor:pointer;}
@@ -32,7 +32,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
 .btn-nav:hover{background:var(--gold);color:var(--black);}
 .btn-nav-solid{background:linear-gradient(135deg,var(--gold-d),var(--gold-l));color:var(--black);border:none;padding:9px 22px;font-size:12px;letter-spacing:0.15em;text-transform:uppercase;cursor:pointer;font-family:"Outfit",sans-serif;font-weight:600;transition:opacity 0.2s;}
 .btn-nav-solid:hover{opacity:0.85;}
- 
+
 /* ── SHARED ── */
 .max-w{max-width:1160px;margin:0 auto;}
 .sec-pad{padding:110px 60px;}
@@ -48,9 +48,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
 .card{background:var(--s2);border:1px solid var(--s3);padding:28px;}
 .gold-card{background:linear-gradient(135deg,rgba(154,122,48,0.15),rgba(201,168,76,0.08));border:1px solid rgba(201,168,76,0.25);padding:28px;}
 .tag{display:inline-block;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,168,76,0.3);padding:5px 12px;}
- 
+
 /* ══ PUBLIC SITE ══════════════════════════════════ */
- 
+
 /* HERO */
 .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 40px 80px;position:relative;overflow:hidden;}
 .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(201,168,76,0.07) 0%,transparent 70%);}
@@ -64,14 +64,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
 .hero-stats{display:flex;justify-content:center;gap:56px;margin-top:64px;padding-top:36px;border-top:1px solid var(--s3);}
 .stat-num{font-family:"Cormorant Garamond",serif;font-size:40px;font-weight:600;color:var(--gold);display:block;}
 .stat-lbl{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--tm);}
- 
+
 /* TICKER */
 .ticker{background:var(--s);border-top:1px solid rgba(201,168,76,0.1);border-bottom:1px solid rgba(201,168,76,0.1);padding:13px 0;overflow:hidden;white-space:nowrap;}
 .ticker-track{display:inline-flex;gap:56px;animation:tick 28s linear infinite;}
 .ticker-item{font-size:12px;letter-spacing:0.15em;color:var(--tm);text-transform:uppercase;}
 .ticker-item span{color:var(--gold);margin-right:8px;}
 @keyframes tick{from{transform:translateX(0);}to{transform:translateX(-50%);}}
- 
+
 /* ABOUT */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
 .about-img-wrap{position:relative;aspect-ratio:4/5;overflow:hidden;}
@@ -82,7 +82,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
 .about-badge-lbl{font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ts);}
 .about-quote{font-family:"Cormorant Garamond",serif;font-size:21px;font-style:italic;color:var(--ts);line-height:1.65;border-left:2px solid var(--gold);padding-left:22px;margin:28px 0;}
 .about-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;}
- 
+
 /* SERVICES */
 .services-bg{background:var(--s);}
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px;}
@@ -99,7 +99,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
 .svc-features li::before{content:"—";color:var(--gold);font-size:10px;flex-shrink:0;}
 .svc-link{display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-size:12px;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;margin-top:28px;transition:gap 0.2s;cursor:pointer;background:none;border:none;font-family:"Outfit",sans-serif;}
 .svc-link:hover{gap:14px;}
- 
+
 /* BOOTCAMP */
 .bc-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:start;}
 .week-list{display:flex;flex-direction:column;gap:2px;margin-top:36px;}
@@ -115,7 +115,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
 .outcome-row h5{font-family:"Cormorant Garamond",serif;font-size:16px;margin-bottom:4px;}
 .outcome-row p{font-size:12px;color:var(--ts);line-height:1.7;}
 .price-box{background:var(--s3);border:1px solid rgba(201,168,76,0.2);padding:24px;margin-top:28px;}
- 
+
 /* FORM SECTION */
 .form-sec{background:var(--s);}
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
@@ -142,7 +142,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
 .info-card{background:var(--s2);border:1px solid var(--s3);padding:26px;margin-bottom:14px;border-left:2px solid var(--gold);}
 .info-card h4{font-family:"Cormorant Garamond",serif;font-size:20px;margin-bottom:7px;}
 .info-card p{font-size:13px;color:var(--ts);line-height:1.8;}
- 
+
 /* TESTIMONIALS */
 .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px;}
 .testi-card{background:var(--s2);border:1px solid var(--s3);padding:34px;position:relative;}
@@ -151,14 +151,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
 .testi-text{font-size:14px;color:var(--ts);line-height:1.85;margin-bottom:22px;font-style:italic;}
 .testi-author{font-size:13px;font-weight:500;}
 .testi-role{font-size:11px;color:var(--tm);letter-spacing:0.1em;text-transform:uppercase;margin-top:3px;}
- 
+
 /* CTA */
 .cta-sec{text-align:center;padding:120px 60px;position:relative;overflow:hidden;}
 .cta-sec::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 70% at 50% 50%,rgba(201,168,76,0.06) 0%,transparent 70%);}
 .cta-sec h2{font-size:clamp(40px,6vw,70px);font-weight:300;margin-bottom:18px;position:relative;}
 .cta-sec p{font-size:16px;color:var(--ts);margin-bottom:44px;position:relative;}
 .cta-btns{display:flex;gap:14px;justify-content:center;position:relative;}
- 
+
 /* FOOTER */
 footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:56px;max-width:1160px;margin:0 auto;}
@@ -171,11 +171,11 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
 .footer-col ul li a:hover{color:var(--gold);}
 .footer-bottom{max-width:1160px;margin:40px auto 0;padding-top:22px;border-top:1px solid var(--s3);display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--tm);}
 .footer-disclaimer{font-size:11px;color:var(--tm);margin-top:20px;max-width:1160px;margin-left:auto;margin-right:auto;line-height:1.7;opacity:0.6;}
- 
+
 /* ══ DASHBOARD ════════════════════════════════════ */
 #dash-view{background:var(--black);}
 .db-wrap{display:flex;min-height:calc(100vh - 72px);}
- 
+
 /* Sidebar */
 .sidebar{width:230px;min-width:230px;background:var(--s);border-right:1px solid var(--s3);display:flex;flex-direction:column;position:fixed;left:0;top:72px;bottom:0;overflow-y:auto;z-index:100;}
 .tier-badge{margin:14px 16px;padding:7px 12px;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;font-weight:600;text-align:center;cursor:pointer;}
@@ -194,7 +194,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
 .u-av{width:32px;height:32px;background:linear-gradient(135deg,var(--gold-d),var(--gold));display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--black);flex-shrink:0;}
 .u-name{font-size:13px;font-weight:500;}
 .u-tier{font-size:10px;color:var(--tm);letter-spacing:0.1em;text-transform:uppercase;margin-top:1px;}
- 
+
 /* Main area */
 .db-main{margin-left:230px;flex:1;}
 .db-topbar{background:rgba(8,8,8,0.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--s3);padding:0 36px;height:60px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:72px;z-index:50;}
@@ -203,7 +203,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
 .notif-btn{width:34px;height:34px;background:var(--s2);border:1px solid var(--s3);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px;position:relative;}
 .notif-dot{width:6px;height:6px;background:var(--gold);border-radius:50%;position:absolute;top:5px;right:5px;}
 .upg-btn{background:linear-gradient(135deg,var(--gold-d),var(--gold-l));color:var(--black);border:none;padding:8px 18px;font-size:11px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;cursor:pointer;font-family:"Outfit",sans-serif;}
- 
+
 /* Tier demo switcher */
 .tier-sw{display:flex;gap:6px;padding:18px 36px 0;}
 .tier-sw-note{font-size:11px;color:var(--tm);letter-spacing:0.12em;text-transform:uppercase;display:flex;align-items:center;margin-right:8px;white-space:nowrap;}
@@ -211,7 +211,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
 .tsw-btn.af{background:rgba(96,165,250,0.15);color:var(--blue);border-color:rgba(96,165,250,0.4);}
 .tsw-btn.ab{background:rgba(201,168,76,0.15);color:var(--gold);border-color:rgba(201,168,76,0.4);}
 .tsw-btn.ac{background:rgba(167,139,250,0.15);color:var(--purple);border-color:rgba(167,139,250,0.4);}
- 
+
 /* DB Pages */
 .db-page{display:none;padding:28px 36px 40px;}
 .db-page.active{display:block;}
@@ -254,7 +254,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
 .upg-banner{background:linear-gradient(135deg,rgba(154,122,48,0.12),rgba(201,168,76,0.06));border:1px solid rgba(201,168,76,0.25);padding:26px;margin-bottom:24px;display:flex;align-items:center;justify-content:space-between;gap:22px;}
 .upg-banner h3{font-size:21px;margin-bottom:5px;}
 .upg-banner p{font-size:13px;color:var(--ts);}
- 
+
 /* RESPONSIVE */
 @media(max-width:900px){
   nav{padding:0 20px;}
@@ -272,7 +272,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
 </style>
 </head>
 <body>
- 
+
 <!-- ══ NAV ══════════════════════════════════════════ -->
 <nav>
   <div class="nav-logo" onclick="showView('site')"><img src="data:image/jpeg;base64,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" alt="IJust Wealth"/></div>
@@ -287,10 +287,10 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
     <button class="btn-nav-solid" onclick="showView('dash')">Member Login</button>
   </div>
 </nav>
- 
+
 <!-- ══ PUBLIC SITE VIEW ══════════════════════════════ -->
 <div id="site-view" class="page-view active">
- 
+
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-bg"></div>
@@ -311,7 +311,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
     </div>
   </div>
 </section>
- 
+
 <!-- TICKER -->
 <div class="ticker">
   <div class="ticker-track">
@@ -319,7 +319,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
     <span class="ticker-item"><span>◆</span>XAUUSD</span><span class="ticker-item"><span>◆</span>GBP/USD</span><span class="ticker-item"><span>◆</span>EUR/USD</span><span class="ticker-item"><span>◆</span>US30</span><span class="ticker-item"><span>◆</span>NAS100</span><span class="ticker-item"><span>◆</span>Funds Management</span><span class="ticker-item"><span>◆</span>Financial Advisory</span><span class="ticker-item"><span>◆</span>Trading Education</span>
   </div>
 </div>
- 
+
 <!-- ABOUT -->
 <section class="sec-pad" id="about">
   <div class="max-w">
@@ -348,7 +348,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
     </div>
   </div>
 </section>
- 
+
 <!-- SERVICES -->
 <section class="sec-pad services-bg" id="services">
   <div class="max-w">
@@ -389,7 +389,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
     </div>
   </div>
 </section>
- 
+
 <!-- BOOTCAMP -->
 <section class="sec-pad" id="bootcamp">
   <div class="max-w">
@@ -425,7 +425,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
     </div>
   </div>
 </section>
- 
+
 <!-- FUNDS & ENQUIRY -->
 <section class="sec-pad form-sec" id="funds">
   <div class="max-w">
@@ -502,7 +502,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
     </div>
   </div>
 </section>
- 
+
 <!-- TESTIMONIALS -->
 <section class="sec-pad" id="results">
   <div class="max-w">
@@ -516,7 +516,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
     </div>
   </div>
 </section>
- 
+
 <!-- CTA -->
 <section class="cta-sec">
   <h2>Stop Guessing. Start Trading<br/><em>With A System.</em></h2>
@@ -526,7 +526,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
     <a href="#funds" class="btn-outline">Funds & Advisory</a>
   </div>
 </section>
- 
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-grid">
@@ -538,13 +538,13 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
   <p class="footer-disclaimer">⚠️ All content provided by IJust Wealth is for educational and informational purposes only and does not constitute financial advice, investment advice, or a recommendation to buy or sell any financial instrument. Trading and investing involve significant risk of loss. Sophisticated investor criteria apply to certain services. Always seek independent financial advice before making any investment decision.</p>
   <div class="footer-bottom"><span>© 2026 IJust Wealth. All rights reserved. Master the Market.</span><span style="color:var(--gold);">IJW</span></div>
 </footer>
- 
+
 </div><!-- end site-view -->
- 
+
 <!-- ══ DASHBOARD VIEW ════════════════════════════════ -->
 <div id="dash-view" class="page-view">
 <div class="db-wrap">
- 
+
 <!-- SIDEBAR -->
 <aside class="sidebar" id="sidebar">
   <div style="padding:16px 16px 10px;border-bottom:1px solid var(--s3);"><img src="data:image/jpeg;base64,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" alt="IJust Wealth" style="height:28px;width:auto;"/></div>
@@ -572,7 +572,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
   </nav>
   <div class="sb-footer"><div class="u-info"><div class="u-av" id="u-av">J</div><div><div class="u-name">Jordan Williams</div><div class="u-tier" id="u-tier">Free Subscriber</div></div></div></div>
 </aside>
- 
+
 <!-- MAIN -->
 <main class="db-main">
   <div class="db-topbar">
@@ -582,7 +582,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
       <button class="upg-btn" id="upg-btn" onclick="showDB('db-profile')">Upgrade Plan</button>
     </div>
   </div>
- 
+
   <!-- Tier Switcher -->
   <div style="padding:18px 36px 0;"><div style="display:flex;gap:6px;background:var(--s2);border:1px solid var(--s3);padding:14px 16px;align-items:center;">
     <span class="tier-sw-note">Demo — View as:</span>
@@ -590,7 +590,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
     <button class="tsw-btn" id="tsw-boot" onclick="setTier('bootcamp')">Bootcamp Member</button>
     <button class="tsw-btn" id="tsw-funds" onclick="setTier('funds')">Funds & Advice Client</button>
   </div></div>
- 
+
   <!-- DB HOME -->
   <div class="db-page active" id="db-home">
     <div id="upg-banner"></div>
@@ -609,7 +609,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
       </div>
     </div>
   </div>
- 
+
   <!-- DB TA TIPS -->
   <div class="db-page" id="db-tips">
     <div class="gold-card" style="margin-bottom:24px;"><span class="sec-label">Free For Everyone</span><h2 style="font-size:30px;margin-bottom:8px;">Technical Analysis <em>Insights</em></h2><p style="font-size:14px;color:var(--ts);max-width:600px;line-height:1.8;">A taste of what we teach inside the IJustWealth Bootcamp. Master these five fundamentals and you'll already be ahead of 90% of retail traders.</p></div>
@@ -620,7 +620,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
     <div class="tip-card"><div style="font-size:15px;font-weight:600;margin-bottom:8px;">📓 Journal Every Trade Without Exception</div><p style="font-size:13px;color:var(--ts);line-height:1.8;">The traders who improve fastest are not the ones who read the most — they are the ones who review the most. Log every trade: entry, exit, reason, result, and how you felt.</p></div>
     <div class="upg-banner" style="margin-top:22px;"><div><h3>Want The Full System?</h3><p>Join the 4-Week Bootcamp and get the complete framework — live sessions, strategy coaching, community and resource library.</p></div><button class="btn-gold" onclick="showDB('db-profile')">Join The Bootcamp →</button></div>
   </div>
- 
+
   <!-- DB COURSE -->
   <div class="db-page" id="db-course">
     <div class="g2">
@@ -651,7 +651,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
       </div>
     </div>
   </div>
- 
+
   <!-- DB SESSIONS -->
   <div class="db-page" id="db-sessions">
     <div class="gold-card" style="margin-bottom:20px;">
@@ -678,7 +678,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
       </div>
     </div>
   </div>
- 
+
   <!-- DB JOURNAL -->
   <div class="db-page" id="db-journal">
     <div class="g3" style="margin-bottom:20px;">
@@ -695,7 +695,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
     </div>
     <button class="btn-gold" style="margin-top:14px;width:100%;">+ Log New Trade</button>
   </div>
- 
+
   <!-- DB RESOURCES -->
   <div class="db-page" id="db-resources">
     <div class="card">
@@ -710,7 +710,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
       <div class="res-row" style="border-bottom:none;"><div class="res-icon">🎯</div><div style="flex:1;"><div style="font-size:13px;font-weight:500;">Pre-Trade Checklist</div><div style="font-size:11px;color:var(--tm);">PDF · 1 page · Tools</div></div><button class="res-btn">Download</button></div>
     </div>
   </div>
- 
+
   <!-- DB COMMUNITY -->
   <div class="db-page" id="db-community">
     <div class="card" style="margin-bottom:16px;"><textarea placeholder="Share a trade idea, insight or question..." style="width:100%;background:var(--s3);border:1px solid var(--s4);color:var(--text);padding:13px;font-size:13px;font-family:'Outfit',sans-serif;resize:none;height:76px;outline:none;"></textarea><div style="display:flex;justify-content:flex-end;margin-top:10px;"><button class="btn-gold" style="padding:10px 26px;font-size:11px;">Post</button></div></div>
@@ -718,7 +718,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
     <div class="post-card"><div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;"><div class="post-av">S</div><div><div style="font-size:13px;font-weight:600;">Sarah K.</div><div style="font-size:11px;color:var(--tm);">4h ago · <span class="pill-gold">Week 2</span></div></div></div><p style="font-size:13px;color:var(--ts);line-height:1.7;margin-bottom:12px;">Finally understanding multi-timeframe analysis. The D1 → H4 → M5 approach is a game changer for my entries.</p><div style="display:flex;gap:14px;"><button style="background:none;border:none;font-size:11px;color:var(--tm);cursor:pointer;font-family:'Outfit',sans-serif;">❤️ 22</button><button style="background:none;border:none;font-size:11px;color:var(--tm);cursor:pointer;font-family:'Outfit',sans-serif;">💬 Reply</button></div></div>
     <div class="post-card"><div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;"><div class="post-av">D</div><div><div style="font-size:13px;font-weight:600;">Demi O.</div><div style="font-size:11px;color:var(--tm);">Yesterday · <span class="pill-green">Week 1 ✅</span></div></div></div><p style="font-size:13px;color:var(--ts);line-height:1.7;margin-bottom:12px;">Week 1 complete ✅ The risk framework module hit hardest. Changed how I think about position sizing entirely.</p><div style="display:flex;gap:14px;"><button style="background:none;border:none;font-size:11px;color:var(--tm);cursor:pointer;font-family:'Outfit',sans-serif;">❤️ 31</button><button style="background:none;border:none;font-size:11px;color:var(--tm);cursor:pointer;font-family:'Outfit',sans-serif;">💬 Reply</button></div></div>
   </div>
- 
+
   <!-- DB LEADERBOARD -->
   <div class="db-page" id="db-leaderboard">
     <div class="gold-card" style="margin-bottom:20px;text-align:center;padding:28px;">
@@ -736,7 +736,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
       <div class="lb-row" style="border-bottom:none;"><div style="font-size:14px;color:var(--tm);width:26px;text-align:center;font-weight:700;">6</div><div class="lb-av">C</div><div style="flex:1;"><div style="font-size:13px;font-weight:500;">Callum B.</div></div><span style="font-size:13px;color:var(--ts);">78%</span></div>
     </div>
   </div>
- 
+
   <!-- DB DEBRIEF -->
   <div class="db-page" id="db-debrief">
     <div class="gold-card" style="margin-bottom:20px;"><span class="sec-label">Week 2 · Due Friday</span><h2 style="font-size:26px;margin-bottom:10px;">Weekly <em>Debrief</em></h2><p style="font-size:13px;color:var(--ts);font-style:italic;">"The difference between a trader who lasts and one who quits is rarely talent or capital. It is the discipline to follow a structured process."</p></div>
@@ -745,7 +745,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
     <div class="card" style="margin-bottom:20px;"><div style="font-size:11px;color:var(--gold);letter-spacing:0.1em;font-weight:600;margin-bottom:10px;">03. Focus for next week?</div><textarea placeholder="e.g. Only trade London session until consistent..." style="width:100%;background:var(--s3);border:1px solid var(--s4);color:var(--text);padding:13px;font-size:13px;font-family:'Outfit',sans-serif;resize:none;height:88px;outline:none;"></textarea></div>
     <button class="btn-gold" style="width:100%;">Submit Week 2 Debrief</button>
   </div>
- 
+
   <!-- DB PORTFOLIO -->
   <div class="db-page" id="db-portfolio">
     <div class="g3" style="margin-bottom:20px;">
@@ -769,7 +769,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
       </div>
     </div>
   </div>
- 
+
   <!-- DB REPORTS -->
   <div class="db-page" id="db-reports">
     <div class="card">
@@ -779,7 +779,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
       <div class="res-row" style="border-bottom:none;"><div class="res-icon">📄</div><div style="flex:1;"><div style="font-size:13px;font-weight:500;">Q1 2026 — Quarterly Summary</div><div style="font-size:11px;color:var(--tm);">PDF · Quarterly overview</div></div><button class="res-btn">Download</button></div>
     </div>
   </div>
- 
+
   <!-- DB ADVISORY -->
   <div class="db-page" id="db-advisory">
     <div class="card">
@@ -791,7 +791,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
       <button class="btn-gold">Send Message</button>
     </div>
   </div>
- 
+
   <!-- DB PROFILE -->
   <div class="db-page" id="db-profile">
     <div class="g2">
@@ -816,11 +816,11 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
       </div>
     </div>
   </div>
- 
+
 </main>
 </div>
 </div><!-- end dash-view -->
- 
+
 <script>
 // ── VIEW SWITCHING ──
 function showView(v) {
@@ -829,7 +829,7 @@ function showView(v) {
   window.scrollTo(0,0);
   if(v==="dash") { setTier("free"); showDB("db-home"); }
 }
- 
+
 // ── SITE JS ──
 function setWeek(el){document.querySelectorAll(".week-item").forEach(w=>w.classList.remove("active"));el.classList.add("active");}
 function switchForm(t){
@@ -858,7 +858,7 @@ function submitForm(id){
     el.scrollIntoView({behavior:'smooth',block:'center'});
   });
 }
- 
+
 // ── DASHBOARD JS ──
 let curTier="free";
 const tiers={
@@ -868,7 +868,7 @@ const tiers={
 };
 const bootPages=["db-course","db-sessions","db-journal","db-resources","db-community","db-leaderboard","db-debrief"];
 const fundsPages=["db-portfolio","db-reports","db-advisory"];
- 
+
 function setTier(t){
   curTier=t;
   const c=tiers[t];
@@ -912,7 +912,7 @@ function setTier(t){
   document.getElementById("tsw-funds").className="tsw-btn"+(t==="funds"?" ac":"");
   showDB(curDBPage);
 }
- 
+
 let curDBPage="db-home";
 function showDB(id){
   const c=tiers[curTier];
@@ -931,7 +931,7 @@ function showDB(id){
   document.getElementById("db-page-title").textContent=titles[id]||"Dashboard";
   curDBPage=id;
 }
- 
+
 // Timer
 function updateTimer(){
   const now=new Date(); const utc=now.getUTCHours()*3600+now.getUTCMinutes()*60+now.getUTCSeconds();
