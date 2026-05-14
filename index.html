@@ -419,7 +419,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
           <div style="font-family:'Cormorant Garamond',serif;font-size:11px;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:6px;">One-Time Investment</div>
           <div style="font-family:'Cormorant Garamond',serif;font-size:40px;color:var(--gold);font-weight:600;">$2,250</div>
           <div style="font-size:12px;color:var(--tm);margin-top:4px;">Full programme · Lifetime access to materials</div>
-          <a href="#funds" class="btn-gold" href="https://www.ijustwealth.com.au/checkout?checkoutId=ca727402-c8c8-4ba3-90b9-0df68528b45c" target="_blank" style="margin-top:18px;display:inline-block;width:100%;text-align:center;">Claim Your Spot</a>
+          <a href="#funds" class="btn-gold" href="https://ishacjustin01.wixsite.com/ijustwealth/book-online" target="_blank" style="margin-top:18px;display:inline-block;width:100%;text-align:center;">Claim Your Spot</a>
         </div>
       </div>
     </div>
@@ -494,7 +494,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
           <div class="fg"><label>Trading Experience</label><select><option value="">Select your experience level</option><option>Complete beginner — never traded</option><option>Some experience — not consistent</option><option>Intermediate — trading but not profitably</option><option>Advanced — refining my system</option></select></div>
           <div class="fg"><label>How Did You Hear About Us?</label><select><option value="">Select an option</option><option>TikTok</option><option>Instagram</option><option>YouTube</option><option>Referral</option><option>Google</option><option>Other</option></select></div>
           <div class="fg"><div class="cb-group"><input type="checkbox" id="c3"/><label for="c3">I understand this is an educational programme and does not constitute financial advice. I'm ready to commit to the full 4 weeks.</label></div></div>
-          <button class="btn-gold" style="width:100%" onclick="submitForm('s-boot');window.open('https://www.ijustwealth.com.au/checkout?checkoutId=ca727402-c8c8-4ba3-90b9-0df68528b45c','_blank')">Reserve My Spot</button>
+          <button class="btn-gold" style="width:100%" onclick="submitForm('s-boot');window.open('https://ishacjustin01.wixsite.com/ijustwealth/book-online','_blank')">Reserve My Spot</button>
           <div id="s-boot" class="success-msg"><p>✓ Spot reserved. Check your email for next steps.</p></div>
           <p class="disclaimer">⚠️ All educational content is for informational purposes only and does not constitute financial or investment advice. Trading involves risk of loss.</p>
         </div>
@@ -522,7 +522,7 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
   <h2>Stop Guessing. Start Trading<br/><em>With A System.</em></h2>
   <p>Limited spots available. Join the next IJustWealth cohort today.</p>
   <div class="cta-btns">
-    <a href="https://www.ijustwealth.com.au/checkout?checkoutId=ca727402-c8c8-4ba3-90b9-0df68528b45c" target="_blank" class="btn-gold">Enrol Now</a>
+    <a href="https://ishacjustin01.wixsite.com/ijustwealth/book-online" target="_blank" class="btn-gold">Enrol Now</a>
     <a href="#funds" class="btn-outline">Funds & Advisory</a>
   </div>
 </section>
@@ -849,7 +849,8 @@ function submitForm(id){
   fetch('https://formspree.io/f/mnjwygll',{
     method:'POST',
     headers:{'Content-Type':'application/json','Accept':'application/json'},
-body:JSON.stringify(data)  }).then(r=>{
+    body:JSON.stringify({...data,form_type:id,email:'info@ijustwealth.com.au'})
+  }).then(r=>{
     el.style.display='block';
     el.scrollIntoView({behavior:'smooth',block:'center'});
   }).catch(()=>{
