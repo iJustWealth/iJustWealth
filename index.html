@@ -170,6 +170,11 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
 .footer-col ul li a{color:var(--tm);text-decoration:none;font-size:13px;transition:color 0.2s;}
 .footer-col ul li a:hover{color:var(--gold);}
 .footer-bottom{max-width:1160px;margin:40px auto 0;padding-top:22px;border-top:1px solid var(--s3);display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--tm);}
+.fg-strip{display:flex;align-items:center;justify-content:center;gap:16px;background:rgba(201,168,76,0.07);border-top:1px solid rgba(201,168,76,0.2);border-bottom:1px solid rgba(201,168,76,0.2);padding:14px 24px;flex-wrap:wrap;text-align:center;}
+.fg-strip-tag{background:var(--gold);color:var(--black);font-size:10px;font-weight:700;letter-spacing:0.2em;padding:4px 10px;text-transform:uppercase;flex-shrink:0;}
+.fg-strip-text{font-size:13px;color:var(--ts);letter-spacing:0.02em;}
+.fg-strip-btn{color:var(--gold);font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(201,168,76,0.4);padding:6px 16px;transition:all 0.2s;flex-shrink:0;}
+.fg-strip-btn:hover{background:var(--gold);color:var(--black);}
 .free-guide-sec{background:linear-gradient(180deg,var(--black) 0%,rgba(201,168,76,0.04) 50%,var(--black) 100%);border-top:1px solid var(--s3);border-bottom:1px solid var(--s3);padding:100px 60px;text-align:center;}
 .free-guide-inner{max-width:760px;margin:0 auto;}
 .free-guide-badge{display:inline-block;background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.35);color:var(--gold);font-size:11px;letter-spacing:0.25em;padding:6px 18px;text-transform:uppercase;margin-bottom:28px;}
@@ -333,6 +338,13 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
     </div>
   </div>
 </section>
+
+<!-- FREE GUIDE TEASER STRIP -->
+<div class="fg-strip">
+  <span class="fg-strip-tag">FREE GUIDE</span>
+  <span class="fg-strip-text">Not ready to enrol? Start with the free guide. Three tools. Zero cost. Real edge.</span>
+  <a href="#free-guide" class="fg-strip-btn">Get It Free ↓</a>
+</div>
 
 <!-- TICKER -->
 <div class="ticker">
@@ -557,9 +569,10 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
       <div class="fg-form-row">
         <input type="text" name="name" placeholder="Your first name" required class="fg-input"/>
         <input type="email" name="email" placeholder="Your email address" required class="fg-input"/>
+        <input type="tel" name="phone" placeholder="Your mobile number" required class="fg-input" pattern="[0-9+\s\-()]{8,20}"/>
         <button type="submit" class="btn-gold fg-btn">Send Me The Guide</button>
       </div>
-      <p class="fg-disclaimer">⚠️ This guide is for educational purposes only and does not constitute financial advice. By submitting, you agree to receive emails from IJustWealth. Unsubscribe anytime.</p>
+      <p class="fg-disclaimer">⚠️ This guide is for educational purposes only and does not constitute financial advice. By submitting, you agree to receive emails and SMS communications from IJustWealth. Unsubscribe anytime.</p>
     </form>
     <div class="fg-success" id="fgSuccess" style="display:none;">
       <span class="fg-tick">✓</span>
