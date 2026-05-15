@@ -170,6 +170,28 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
 .footer-col ul li a{color:var(--tm);text-decoration:none;font-size:13px;transition:color 0.2s;}
 .footer-col ul li a:hover{color:var(--gold);}
 .footer-bottom{max-width:1160px;margin:40px auto 0;padding-top:22px;border-top:1px solid var(--s3);display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--tm);}
+.free-guide-sec{background:linear-gradient(180deg,var(--black) 0%,rgba(201,168,76,0.04) 50%,var(--black) 100%);border-top:1px solid var(--s3);border-bottom:1px solid var(--s3);padding:100px 60px;text-align:center;}
+.free-guide-inner{max-width:760px;margin:0 auto;}
+.free-guide-badge{display:inline-block;background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.35);color:var(--gold);font-size:11px;letter-spacing:0.25em;padding:6px 18px;text-transform:uppercase;margin-bottom:28px;}
+.free-guide-title{font-size:clamp(36px,5vw,60px);font-weight:300;margin-bottom:16px;line-height:1.15;}
+.free-guide-title span{color:var(--gold);}
+.free-guide-sub{font-size:15px;color:var(--ts);margin-bottom:48px;line-height:1.7;max-width:560px;margin-left:auto;margin-right:auto;}
+.free-guide-items{display:flex;flex-direction:column;gap:20px;margin-bottom:48px;text-align:left;}
+.fgi{display:flex;align-items:flex-start;gap:18px;background:var(--s2);border:1px solid var(--s3);padding:20px 24px;}
+.fgi-icon{font-size:22px;flex-shrink:0;margin-top:2px;}
+.fgi strong{display:block;font-size:14px;color:var(--gold);letter-spacing:0.05em;margin-bottom:4px;}
+.fgi p{font-size:13px;color:var(--ts);margin:0;line-height:1.6;}
+.free-guide-form{}
+.fg-form-row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:16px;}
+.fg-input{background:var(--s2);border:1px solid var(--s3);color:var(--text);padding:14px 18px;font-size:13px;font-family:"Outfit",sans-serif;outline:none;flex:1;min-width:200px;transition:border-color 0.2s;}
+.fg-input:focus{border-color:var(--gold);}
+.fg-input::placeholder{color:var(--tm);}
+.fg-btn{white-space:nowrap;padding:14px 32px;font-size:13px;}
+.fg-disclaimer{font-size:11px;color:var(--tm);opacity:0.6;line-height:1.7;max-width:600px;margin:0 auto;}
+.fg-success{padding:32px;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.3);}
+.fg-tick{display:block;font-size:32px;color:var(--gold);margin-bottom:10px;}
+.fg-success p{color:var(--text);font-size:15px;margin:0;}
+@media(max-width:640px){.free-guide-sec{padding:80px 24px;}.fg-form-row{flex-direction:column;}.fg-input,.fg-btn{width:100%;}}
 .footer-disclaimer{font-size:11px;color:var(--tm);margin-top:20px;max-width:1160px;margin-left:auto;margin-right:auto;line-height:1.7;opacity:0.6;}
 
 /* ══ DASHBOARD ════════════════════════════════════ */
@@ -518,6 +540,34 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
 </section>
 
 <!-- CTA -->
+<!-- FREE GUIDE SECTION -->
+<section class="free-guide-sec" id="free-guide">
+  <div class="free-guide-inner">
+    <div class="free-guide-badge">FREE DOWNLOAD</div>
+    <h2 class="free-guide-title">Master The Market<br/><span>Free Guide</span></h2>
+    <p class="free-guide-sub">Three professional tools used by every serious trader — yours free. No fluff, no filler. Just the tools that matter.</p>
+    <div class="free-guide-items">
+      <div class="fgi"><span class="fgi-icon">🗓</span><div><strong>Session Timing Map</strong><p>Know exactly when to trade and when to stay out — all times in AEST.</p></div></div>
+      <div class="fgi"><span class="fgi-icon">📊</span><div><strong>Candlestick Patterns Guide</strong><p>The essential patterns every price action trader needs to recognise.</p></div></div>
+      <div class="fgi"><span class="fgi-icon">✅</span><div><strong>Pre-Trade Checklist</strong><p>The 5-step process to complete before entering any trade. No exceptions.</p></div></div>
+    </div>
+    <form class="free-guide-form" action="https://formspree.io/f/mnjwygll" method="POST" id="freeGuideForm">
+      <input type="hidden" name="_subject" value="Free Guide Download Request — IJustWealth"/>
+      <input type="hidden" name="_next" value="https://ijustwealth.com.au?guide=sent"/>
+      <div class="fg-form-row">
+        <input type="text" name="name" placeholder="Your first name" required class="fg-input"/>
+        <input type="email" name="email" placeholder="Your email address" required class="fg-input"/>
+        <button type="submit" class="btn-gold fg-btn">Send Me The Guide</button>
+      </div>
+      <p class="fg-disclaimer">⚠️ This guide is for educational purposes only and does not constitute financial advice. By submitting, you agree to receive emails from IJustWealth. Unsubscribe anytime.</p>
+    </form>
+    <div class="fg-success" id="fgSuccess" style="display:none;">
+      <span class="fg-tick">✓</span>
+      <p>Check your inbox — your free guide is on its way.</p>
+    </div>
+  </div>
+</section>
+
 <section class="cta-sec">
   <h2>Stop Guessing. Start Trading<br/><em>With A System.</em></h2>
   <p>Limited spots available. Join the next IJustWealth cohort today.</p>
@@ -540,6 +590,35 @@ footer{background:var(--s);border-top:1px solid var(--s3);padding:56px 60px;}
 </footer>
 
 </div><!-- end site-view -->
+<script>
+// Free guide form — AJAX submission via Formspree
+const fgForm = document.getElementById('freeGuideForm');
+if(fgForm){
+  fgForm.addEventListener('submit', async function(e){
+    e.preventDefault();
+    const btn = fgForm.querySelector('.fg-btn');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    try {
+      const res = await fetch(fgForm.action, {
+        method: 'POST',
+        body: new FormData(fgForm),
+        headers: { 'Accept': 'application/json' }
+      });
+      if(res.ok){
+        fgForm.style.display = 'none';
+        document.getElementById('fgSuccess').style.display = 'block';
+      } else {
+        btn.textContent = 'Try Again';
+        btn.disabled = false;
+      }
+    } catch(err){
+      btn.textContent = 'Try Again';
+      btn.disabled = false;
+    }
+  });
+}
+</script>
 
 <!-- ══ DASHBOARD VIEW ════════════════════════════════ -->
 <div id="dash-view" class="page-view">
